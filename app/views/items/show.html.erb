@@ -1,0 +1,5 @@
+<%= link_to 'Редагувати', edit_item_path(@item)%>
+<%= link_to 'Видалити', item_path(@item), method: :delete, data: {confirm: "Ви впевнені?"} %>
+<h1><%=@item.title%></h1>
+<p><%=@item.summary%></p>
+<h5><%=@item.price%></h5>
